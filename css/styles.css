@@ -1,5 +1,11 @@
-.maincolor {
-    background-color: transparent;
+.bg {
+    background-image: url("https://c.wallhere.com/photos/c7/81/portrait_display_vertical_nature_landscape_mountains_dusk_snow-1996701.jpg!d");
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
 }
 .formContainer {
     padding: 200px;
@@ -9,4 +15,13 @@
     padding-bottom: .75rem;
     background-color: ghostwhite;
     border: 1px solid grey;
+}
+
+.col-5{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rebeccapurple;
+    opacity: 0.5;
+    text-align: center;
+    text-justify: distribute-center-last;
 }
