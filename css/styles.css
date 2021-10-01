@@ -23,5 +23,10 @@
     background-color: rebeccapurple;
     opacity: 0.5;
     text-align: center;
-    text-justify: distribute-center-last;
+    text-wrap: normal;
+}
+.col-5 text
+{
+    color: white;
+    font-size: large;
 }
