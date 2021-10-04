@@ -15,13 +15,13 @@ body {
     padding-top: .75rem;
     padding-bottom: .75rem;
     background-color: ghostwhite;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
 }
 
 .col-5{
     padding-top: .75rem;
     padding-bottom: .75rem;
-    background-color: rebeccapurple;
+    background-color: grey;
     opacity: 0.5;
     text-align: center;
     text-wrap: normal;
@@ -29,7 +29,7 @@ body {
 .col-5 text
 {
     opacity: 1;
-    color: ghostwhite;
+    color: red;
     font-size: large;
     font-weight: bold;
 }
