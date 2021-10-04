@@ -43,9 +43,9 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md">
+                                <div class="col">
                                     <div class="form-floating">
-                                        <select class="form-select" id="floatingIdKind" placeholder="Tipo de documento">
+                                        <select class="form-select" id="floatingIdKind" placeholder="Tipo de documento" onclick="this.setAttribute('value', this.value);" value="">
                                             <option selected></option>
                                             <option value="CC">Cédula de ciudadanía</option>
                                             <option value="CE">Cédula de extranjería</option>
@@ -55,18 +55,17 @@
                                         <label for="floatingIdKind">Tipo de documento</label>
                                     </div>
                                 </div>
-                                <div class="col-md">
+                                <div class="col">
                                     <div class="form-floating">
                                         <input type="text" class="form-control form-control-sm" id="floatingNum" placeholder="Número">
                                         <label for="floatingNum">Número</label>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
-                                <div class="col-md">
+                                <div class="col">
                                     <div class="form-floating">
-                                        <select class="form-select" id="floatingDepartment">
+                                        <select class="form-select" id="floatingDepartment" onclick="this.setAttribute('value', this.value);" value="">
                                             <option selected></option>
                                             <option value="1">Cundinamarca</option>
                                             <option value="2">Quindío</option>
@@ -76,20 +75,55 @@
                                         <label for="floatingDepartment">Departamento de expedición</label>
                                     </div>
                                 </div>
-                                <div class="col-md">
+                                <div class="col">
                                     <div class="form-floating">
-                                        <select class="form-select" id="floatingCity">
+                                        <select class="form-select" id="floatingCity" onclick="this.setAttribute('value', this.value);" value="">
                                             <option selected></option>
                                             <option value="1">Bogotá D.C.</option>
                                         </select>
                                         <label for="floatingCity">Ciudad de expedición</label>
                                     </div>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingNationality" placeholder="Nacionalidad">
+                                        <label for="floatingNationality">Nacionalidad</label>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="address" class="form-control" id="floatingAddress" placeholder="Dirección">
+                                        <label for="floatingAddress">Dirección</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="floating-label">
+                                <select class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
+                                    <option value=""></option>
+                                    <option value="1">Item1</option>
+                                    <option value="2">Item2</option>
+                                    <option value="3">Item3</option>
+                                    <option value="4">Item4</option>
+                                    <option value="5">Item5</option>
+                                </select>
+                                <label>Select</label>
+                            </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingDepartment2">
+                                    <option selected></option>
+                                    <option value="1">Cundinamarca</option>
+                                    <option value="2">Quindío</option>
+                                    <option value="3">Amazonas</option>
+                                    <option value="4">Meta</option>
+                                </select>
+                                <label for="floatingDepartment2">Departamento</label>
+                            </div>
+
 
                         </form>
                     </div>

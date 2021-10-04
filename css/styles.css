@@ -33,3 +33,15 @@ body {
     font-size: large;
     font-weight: bold;
 }
+
+.form-select:focus ~ label, .form-select:not([value=""]):valid ~ label{
+    top:0%;
+    font-size:14px;
+    color:#5264AE;
+}
+.form-select:not(focus) ~ label {
+    top: 15%;
+    font-size: 18px;
+    opacity: 1;
+    color: #000000;
+}
