@@ -1,4 +1,4 @@
-.bg {
+body {
     background-image: url("https://c.wallhere.com/photos/c7/81/portrait_display_vertical_nature_landscape_mountains_dusk_snow-1996701.jpg!d");
     height: 100%;
     /* Center and scale the image nicely */
@@ -27,6 +27,8 @@
 }
 .col-5 text
 {
-    color: white;
+    opacity: 1;
+    color: ghostwhite;
     font-size: large;
+    font-weight: bold;
 }
