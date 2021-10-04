@@ -42,6 +42,8 @@ body {
 .form-select:not(focus) ~ label {
     top: 15%;
     font-size: 18px;
-    opacity: 1;
-    color: #000000;
+    color: rgba(0,0,0, 1);
+}
+label{
+    color: #737373;
 }
