@@ -40,10 +40,13 @@ body {
     color:#5264AE;
 }
 .form-select:not(focus) ~ label {
-    top: 15%;
+    display: flex;
+    align-items: center;
+    top: 11px;
     font-size: 18px;
     color: rgba(0,0,0, 1);
 }
+
 label{
     color: #737373;
 }

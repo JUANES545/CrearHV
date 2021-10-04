@@ -106,7 +106,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row"><div class="col">
                                     <div class="form-floating">
                                         <select class="form-select" id="floatingDepartmentB" onclick="this.setAttribute('value', this.value);" value="">
@@ -117,7 +116,8 @@
                                             <option value="4">Meta</option>
                                         </select>
                                         <label for="floatingDepartmentB">Departamento de nacimiento</label>
-                            </div></div>
+                                    </div>
+                                </div>
                                 <div class="col">
                                     <div class="form-floating">
                                         <select class="form-select" id="floatingCityB" onclick="this.setAttribute('value', this.value);" value="">
@@ -129,6 +129,53 @@
                                 </div>
                             </div>
 
+                            <div class="row"><div class="col">
+                                <div class="form-floating">
+                                    <select class="form-select" id="inputGender" onclick="this.setAttribute('value', this.value);" value="">
+                                        <option selected></option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Femenino</option>
+                                    </select>
+                                    <label for="inputGender">Genero</label>
+                                </div>
+                            </div>
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="inputStatus" onclick="this.setAttribute('value', this.value);" value="">
+                                            <option selected></option>
+                                            <option value="1">Soltero(a)</option>
+                                            <option value="2">Casado(a)</option>
+                                            <option value="3">Separado(a)</option>
+                                            <option value="4">Unión libre</option>
+                                            <option value="5">Viudo(a)</option>
+                                        </select>
+                                        <label for="inputStatus">Estado civil</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control form-control-sm" id="floatingCell" placeholder="Nombres">
+                                        <label for="floatingCell">Celular</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control form-control-sm" id="floatingCell2" placeholder="Apellidos">
+                                        <label for="floatingCell2">Celular alterno</label>
+                                    </div>
+                                </div>
+                            </div>
 
 
                         </form>
