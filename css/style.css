@@ -466,6 +466,9 @@ textarea.form-control {
   .actions {
     right: 50%;
     transform: translateX(50%);
-    bottom: 3%; } }
+    bottom: 3%;
+  }
+}
+}
 
 /*# sourceMappingURL=style.css.map */
