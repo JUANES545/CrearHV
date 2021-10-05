@@ -1,3 +1,5 @@
+const wrapper = document.querySelector('body.wrapper')
+console.log(document.body.clientWidth)
 $(function(){
 	$("#wizard").steps({
         headerTag: "h2",

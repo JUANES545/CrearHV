@@ -407,9 +407,22 @@ textarea.form-control {
   .wizard {
     max-width: 768px; }
 
-  .image-holder img {
-    height: 521px;
-    object-fit: cover; } }
+  .image-holder {
+    width: 40%;
+    height: auto;
+    background: #CCC;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  @supports(object-fit: cover){
+    .image-holder img{
+      height: 100%;
+      border: 0px;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
 
 @media (max-width: 767px) {
   .inner {
