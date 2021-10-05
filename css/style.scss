@@ -62,6 +62,14 @@ img {
 	transform: translateX(50%);
 	z-index: 9;
 }
+@supports(object-fit: cover){
+	.wizard > .steps{
+		top: 7.44%;
+		border: 0px;
+		object-fit: cover;
+		object-position: center center;
+	}
+}
 .wizard > .steps .current-info, .wizard > .steps .number {
     display: none;
 }

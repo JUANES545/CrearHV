@@ -4,11 +4,11 @@ $(function(){
         bodyTag: "section",
         transitionEffect: "fade",
         enableAllSteps: true,
-        transitionEffectSpeed: 500,
+        transitionEffectSpeed: 100,
         labels: {
             finish: "Enviar",
             next: "Siguiente",
-            previous: "Atras"
+            previous: "Atrás"
         }
     });
     $('.wizard > .steps li a').click(function(){

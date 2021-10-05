@@ -72,7 +72,8 @@ img{
   z-index: 9; }
 
 .wizard > .steps .current-info, .wizard > .steps .number {
-  display: none; }
+  display: none;
+}
 
 .wizard > .steps ul {
   display: flex;
@@ -98,15 +99,15 @@ img{
     content: "";
     width: 0;
     height: 2px;
-    background: #6d7f52;
+    background: rgba(246, 2, 2, 0.73);
     position: absolute;
     left: -68px;
     top: 5px;
     transition: all 0.6s ease; }
 .wizard > .steps li.first a {
-  background: #6d7f52; }
+  background: #e10b0b; }
 .wizard > .steps li.checked a {
-  background: #6d7f52; }
+  background: #f60202; }
 .wizard > .steps li.checked a:after {
   width: 58px; }
 .wizard > .steps li:last-child a {
@@ -118,7 +119,10 @@ img{
 
 .wizard > .content {
   position: relative;
-  height: 521px; }
+  /*changes*/
+  display: flex;
+  align-items: center;
+  height: auto; }
 
 .inner {
   display: flex;
@@ -265,7 +269,8 @@ textarea.form-control {
   right: 10px;
 }
   .actions ul {
-    display: flex; }
+    display: flex;
+  }
   .actions li a {
     padding: 0;
     border: none;
