@@ -1,228 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link rel="shortcut icon" href="#">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>Crear hoja de vida</title>
-</head>
-<body>
-<div class="formContainer">
-    <div class="row">
-        <div class="col-5">
-            <text>
-            </text>
-        </div>
+	<head>
+		<meta charset="utf-8">
+		<title>HQ5 Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="col">
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 
-            <div class="accordion" id="BasicData">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                            <strong>Datos básicos</strong>
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                        <form>
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/form-wizard-1.jpg" alt="">
+						</div>
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>Información Básica</h3>
+							</div>
+							<p>Por favor complete con sus datos</p>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Nombres" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Apellidos" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Correo electrónico" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Celular" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Celular alterno" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Teléfono" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Edad" class="form-control">
+								</div>
+								<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+									<div class="checkbox-tick">
+										<label class="male">
+											<input type="radio" name="gender" value="male" checked> Male<br>
+											<span class="checkmark"></span>
+										</label>
+										<label class="female">
+											<input type="radio" name="gender" value="female"> Female<br>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="checkbox-circle">
+								<label>
+									<input type="checkbox" checked> Nor again is there anyone who loves or pursues or desires to obtaini.
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+                </section>
 
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control form-control-sm" id="floatingFirstName" placeholder="Nombres">
-                                        <label for="floatingFirstName">Nombres</label>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control form-control-sm" id="floatingLastName" placeholder="Apellidos">
-                                        <label for="floatingLastName">Apellidos</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="floatingIdKind" placeholder="Tipo de documento" onclick="this.setAttribute('value', this.value);" value="">
-                                            <option selected></option>
-                                            <option value="CC">Cédula de ciudadanía</option>
-                                            <option value="CE">Cédula de extranjería</option>
-                                            <option value="PE">Permiso especial de permanencia</option>
-                                            <option value="CD">Carne diplomático</option>
-                                        </select>
-                                        <label for="floatingIdKind">Tipo de documento</label>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control form-control-sm" id="floatingNum" placeholder="Número">
-                                        <label for="floatingNum">Número</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="floatingDepartment" onclick="this.setAttribute('value', this.value);" value="">
-                                            <option selected></option>
-                                            <option value="1">Cundinamarca</option>
-                                            <option value="2">Quindío</option>
-                                            <option value="3">Amazonas</option>
-                                            <option value="4">Meta</option>
-                                        </select>
-                                        <label for="floatingDepartment">Departamento de expedición</label>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="floatingCity" onclick="this.setAttribute('value', this.value);" value="">
-                                            <option selected></option>
-                                            <option value="1">Bogotá D.C.</option>
-                                        </select>
-                                        <label for="floatingCity">Ciudad de expedición</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="floatingNationality" placeholder="Nacionalidad">
-                                        <label for="floatingNationality">Nacionalidad</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <input type="address" class="form-control" id="floatingAddress" placeholder="Dirección">
-                                        <label for="floatingAddress">Dirección</label>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="floatingNeighbor" placeholder="Dirección">
-                                        <label for="floatingNeighbor">Barrio</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row"><div class="col">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="floatingDepartmentB" onclick="this.setAttribute('value', this.value);" value="">
-                                            <option selected></option>
-                                            <option value="1">Cundinamarca</option>
-                                            <option value="2">Quindío</option>
-                                            <option value="3">Amazonas</option>
-                                            <option value="4">Meta</option>
-                                        </select>
-                                        <label for="floatingDepartmentB">Departamento de nacimiento</label>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="floatingCityB" onclick="this.setAttribute('value', this.value);" value="">
-                                            <option selected></option>
-                                            <option value="1">Bogotá D.C.</option>
-                                        </select>
-                                        <label for="floatingCityB">Ciudad de nacimiento</label>
-                                    </div>
-                                </div>
-                            </div>
+				<!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/form-wizard-2.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Historia acádemica</h3>
+							</div>
+							<p>Please fill with additional info</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" placeholder="Address" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="City" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Zip Code" class="form-control">
+								</div>
+							</div>
 
-                            <div class="row"><div class="col">
-                                <div class="form-floating">
-                                    <select class="form-select" id="inputGender" onclick="this.setAttribute('value', this.value);" value="">
-                                        <option selected></option>
-                                        <option value="1">Masculino</option>
-                                        <option value="2">Femenino</option>
-                                    </select>
-                                    <label for="inputGender">Genero</label>
-                                </div>
-                            </div>
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="inputStatus" onclick="this.setAttribute('value', this.value);" value="">
-                                            <option selected></option>
-                                            <option value="1">Soltero(a)</option>
-                                            <option value="2">Casado(a)</option>
-                                            <option value="3">Separado(a)</option>
-                                            <option value="4">Unión libre</option>
-                                            <option value="5">Viudo(a)</option>
-                                        </select>
-                                        <label for="inputStatus">Estado civil</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                        <label for="floatingInput">Email address</label>
-                                    </div>
-                                </div>
-                            </div>
+							<div class="form-row">
+								<div class="select">
+									<div class="form-holder">
+										<div class="select-control">Your country</div>
+										<i class="zmdi zmdi-caret-down"></i>
+									</div>
+									<ul class="dropdown">
+										<li rel="United States">United States</li>
+										<li rel="United Kingdom">United Kingdom</li>
+										<li rel="Viet Nam">Viet Nam</li>
+									</ul>
+								</div>
+								<div class="form-holder"></div>
+							</div>
+						</div>
+					</div>
+                </section>
 
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control form-control-sm" id="floatingCell" placeholder="Celular">
-                                        <label for="floatingCell">Celular</label>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control form-control-sm" id="floatingCell2" placeholder="Celular alterno">
-                                        <label for="floatingCell2">Celular alterno</label>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/form-wizard-3.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Historia Laboral</h3>
+							</div>
+							<p>Send an optional message</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<textarea name="" id="" placeholder="Your messagere here!" class="form-control" style="height: 99px;"></textarea>
+								</div>
+							</div>
+							<div class="checkbox-circle mt-24">
+								<label>
+									<input type="checkbox" checked>  Please accept <a href="#">terms and conditions ?</a>
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+                </section>
+            </form>
+		</div>
 
+		<!-- JQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
 
-                        </form>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="academicHistory-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                            <strong>Historia académica</strong>
-                        </button>
-                    </h2>
-                    <div id="academicHistory-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="workHistory-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                            <strong>Historia laboral</strong>
-                        </button>
-                    </h2>
-                    <div id="workHistory-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="additionalInfo-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                            <strong>Información adicional</strong>
-                        </button>
-                    </h2>
-                    <div id="additionalInfo-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
 </body>
 </html>
