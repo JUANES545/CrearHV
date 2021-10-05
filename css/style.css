@@ -7,13 +7,18 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Muli-Regular";
   font-size: 15px;
   color: #999;
-  margin: 0; }
+  margin: 0;
+}
+
 
 :focus {
   outline: none; }
@@ -66,7 +71,8 @@ img{
 
 .wizard > .steps {
   position: absolute;
-  top: 27.44%;
+  /*manual values*/
+  top: 140px;
   right: 30%;
   transform: translateX(50%);
   z-index: 9; }
@@ -262,17 +268,15 @@ textarea.form-control {
 
 .actions {
   position: absolute;
-  display: flex;
-  align-items: end;
-  justify-content: right;
-  button: -20px;
-  right: 10px;
+  /*manual modification*/
+  top: 90%;
+  right: 18px;
 }
   .actions ul {
     display: flex;
   }
   .actions li a {
-    padding: 0;
+    /*padding: 0;*/
     border: none;
     display: inline-flex;
     height: 41px;
@@ -406,6 +410,7 @@ textarea.form-control {
   .image-holder img {
     height: 521px;
     object-fit: cover; } }
+
 @media (max-width: 767px) {
   .inner {
     display: block;
@@ -432,7 +437,7 @@ textarea.form-control {
       margin-bottom: 18px; }
 
   .wrapper {
-    height: 1201px;
+    height: auto;
     background: none; }
 
   .checkbox-circle {
