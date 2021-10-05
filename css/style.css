@@ -42,22 +42,22 @@ textarea {
 /*prubas*/
 
 img{
+  border: 0px;
   max-width: 100%;
-  height: 500px;
   filter:brightness(0.7);
 }
 /*fin*/
 
 .wrapper {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center!important;
+  justify-content: center!important;
   background-image: url("https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  background-attachment: fixed!important;
 }
 
 .wizard {
@@ -107,8 +107,8 @@ img{
   background: #6d7f52; }
 .wizard > .steps li.checked a {
   background: #6d7f52; }
-  .wizard > .steps li.checked a:after {
-    width: 58px; }
+.wizard > .steps li.checked a:after {
+  width: 58px; }
 .wizard > .steps li:last-child a {
   margin-right: 0; }
 .wizard > .steps li:first-child a:before {
@@ -144,6 +144,7 @@ img{
 @supports(object-fit: cover){
   .image-holder img{
     height: 100%;
+    border: 0px;
     object-fit: cover;
     object-position: center center;
   }
