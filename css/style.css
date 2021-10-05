@@ -236,9 +236,12 @@ textarea.form-control {
   background: url("../images/textarea-bg.png") no-repeat right bottom 3px; }
 
 .actions {
+  background-color: red;
   position: absolute;
-  bottom: 20px;
-  right: 21px; }
+  display: flex;
+  align-items: end;
+  justify-content: right;
+}
   .actions ul {
     display: flex; }
   .actions li a {
