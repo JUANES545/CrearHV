@@ -49,4 +49,11 @@ body {
 
 label{
     color: #737373;
+    font-weight:normal;
+    pointer-events:none;
+    transition:0.2s ease all !important;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
 }
+
+
