@@ -39,8 +39,12 @@ a {
 textarea {
   resize: none; }
 
-img {
-  max-width: 100%; }
+/*prubas*/
+
+img{
+  max-width: 100%;
+}
+/*fin*/
 
 .wrapper {
   height: 100vh;
@@ -116,6 +120,8 @@ img {
 
 .inner {
   display: flex;
+  justify-content: center;
+  /*align-items: center;*/
   height: auto;
   background: #fff;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
@@ -127,7 +133,19 @@ img {
 
 .image-holder {
   width: 40%;
-  height: 521px; }
+  height: auto;
+  background: #CCC;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+@supports(object-fit: cover){
+  .image-holder img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
 
 .form-content {
   width: 60%;
