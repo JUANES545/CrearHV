@@ -455,10 +455,15 @@ textarea.form-control {
   .image-holder img {
     width: 100%;
   }
-
+  /*manual modification*/
   .form-content {
     width: 100%;
-    padding: 50px 20px 30px; }
+    padding: 30px 20px 30px;
+  }
+  h3{
+    margin-bottom: 30px;
+  }
+  /**/
 
   .form-row {
     display: block; }
