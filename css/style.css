@@ -434,9 +434,17 @@ textarea.form-control {
     -o-box-shadow: none; }
 
   .image-holder {
-    width: 100%; }
+    width: 100%;
+    /*Manual modification*/
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
     .image-holder img {
-      width: 100%; }
+      width: 100%;
+    }
 
   .form-content {
     width: 100%;
