@@ -72,7 +72,7 @@ img{
 .wizard > .steps {
   position: absolute;
   /*manual values*/
-  top: 140px;
+  top: 138px;
   right: 30%;
   transform: translateX(50%);
   z-index: 9; }
@@ -405,7 +405,17 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .wizard {
-    max-width: 768px; }
+    max-width: 768px;
+  }
+
+  .wizard > .steps {
+    position: absolute;
+    /*manual values*/
+    top: 160px;
+    right: 30%;
+    transform: translateX(50%);
+    z-index: 9;
+  }
 
   .image-holder {
     width: 40%;
@@ -442,9 +452,9 @@ textarea.form-control {
     justify-content: center;
   }
 
-    .image-holder img {
-      width: 100%;
-    }
+  .image-holder img {
+    width: 100%;
+  }
 
   .form-content {
     width: 100%;
@@ -466,10 +476,10 @@ textarea.form-control {
 
   .wizard {
     height: 100%; }
-    .wizard > .steps {
-      right: 50%;
-      top: 52%;
-      transform: translateX(50%); }
+  .wizard > .steps {
+    right: 50%;
+    top: 455px;
+    transform: translateX(50%); }
 
   .actions {
     right: 50%;
