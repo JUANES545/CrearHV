@@ -281,7 +281,7 @@ textarea.form-control {
   height: 41px;
   width: 135px;
   align-items: center;
-  background: #e9e0cf;
+  background: #a0a2a4;
   font-family: "Muli-SemiBold";
   color: #666;
   cursor: pointer;
@@ -308,8 +308,8 @@ textarea.form-control {
   margin-left: 20px; }
 .actions li:last-child a {
   width: 124px;
-  background: #6d7f52;
-  color: #fff; }
+  background: #45494a;
+  color: #2b2b2b; }
 .actions li:last-child a:hover {
   background: #849963; }
 .actions li:last-child a:before {
