@@ -158,6 +158,7 @@ img{
     object-fit: cover;
     object-position: center center;
   }
+
 }
 
 .form-content {
@@ -437,6 +438,7 @@ textarea.form-control {
     }
   }
 
+  /*Cellphone*/
   @media (max-width: 767px) {
     .inner {
       display: block;
@@ -448,7 +450,7 @@ textarea.form-control {
 
     .image-holder {
       width: 100%;
-      /*Manual modification*/
+      /*Manual modification*/;
       max-height: 500px;
       min-height: 500px;
       display: flex;
@@ -460,6 +462,7 @@ textarea.form-control {
     @supports(object-fit: cover){
       .image-holder img{
         min-height: 500px;
+        min-width: 105vh;
         max-width: 100%;
         border: 0;
         object-fit: cover;
