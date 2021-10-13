@@ -10,16 +10,22 @@
 
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css">
 	</head>
 	<body>
+
 		<div class="wrapper">
             <form action="" id="wizard">
         		<!-- SECTION 1 -->
                 <h2></h2>
                 <section>
                     <div class="inner">
+
 						<div class="image-holder">
-							<img src="images/form-wizard-1.jpg" alt="">
+							<a href="images/form-wizard-1.jpg" class="progressive replace">
+								<img src="images/form-wizard-1 (1).jpg" class="preview" alt="image" />
+							</a>
 						</div>
 
 						<div class="form-content" >
@@ -166,6 +172,8 @@
                 </section>
             </form>
 		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js" async></script>
 
 		<!-- JQUERY -->
 		<script src="js/jquery-3.3.1.min.js"></script>
