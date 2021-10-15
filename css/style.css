@@ -19,7 +19,6 @@ body {
   margin: 0;
 }
 
-
 :focus {
   outline: none; }
 
@@ -147,6 +146,7 @@ img{
 
 .image-holder {
   width: 40%;
+  min-width: 40vh; /*Experimental*/
   height: auto;
   background: #CCC;
   overflow: hidden;
@@ -155,7 +155,7 @@ img{
 }
 @supports(object-fit: cover){
   .image-holder img{
-    min-width: 100vh; /* Experimental */
+     /* Experimental */
     height: 100%;
     border: 0px;
     object-fit: cover;
