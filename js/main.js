@@ -39,3 +39,20 @@ $(function(){
         $(this).parent().prev().find('div').text(text);
     })
 })
+
+/*
+* API
+*/
+var url = "https://api.pexels.com/v1/search?query=nature&per_page=8&orientation=portrait";
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+
+xhr.setRequestHeader("Authorization", "Bearer 563492ad6f9170000100000107d8b1e4d41241dd96a28c858b8074c6");
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+        //console.log(xhr.status);
+        //xhr.responseText;
+        alert(xhr.response);
+    }};
+xhr.send();
